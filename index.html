@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desenvolvimento de Sistemas</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: #fff;
+            font-size: 25px; /* Alterando o tamanho padrão do texto */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Qw2Rp55c3gGA6VWNpMJbDLaQZx2XhcZsdMmhd66dlDfPc7qP2nV8MYllvTMImD3ptw8&usqp=CAU alt="Imagem Principal">
+        <h1 style="font-size: 40px;">Bem vindo(a) ao nosso site!</h1> 
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </header>
+    
+    <nav id="menu">
+        <h1 style="text-align:center;">Menu</h1>
+        <a href="Linguagens.html">Linguagens</a>
+        <a href="Plataformas.html">Aplicativos</a>
+        <a href="Quiz.html">Quiz De Programação</a>
+        <a href="Avaliacao.html">Avaliação do Site</a>
+        <!-- Animação -->
+        <img src="https://w0.peakpx.com/wallpaper/105/372/HD-wallpaper-robot-blue-code-tech.jpg" alt="main" class="animacao">
+    </nav>
+
+    <main>
+        <h2 style="font-size: 30px;">Curso de Desenvolvimento de Sistemas</h2> <!-- Alterando o tamanho do título do texto -->
+        <p>
+            O curso de desenvolvimento de sistemas é uma formação educacional focada em preparar os alunos para projetar, criar e manter sistemas de software. Ele abrange uma ampla variedade de tópicos, desde os fundamentos da programação até técnicas avançadas de desenvolvimento de software e design de sistemas.
+        </p>
+        <p>
+            Normalmente, o curso inclui disciplinas que cobrem linguagens de programação populares, como Java, Python, C++ ou outras, além de bancos de dados, algoritmos, estruturas de dados, desenvolvimento web, desenvolvimento mobile, segurança da informação, engenharia de software, entre outros.
+        </p>
+        <p>
+            Os alunos também podem aprender sobre metodologias de desenvolvimento de software, como Agile ou Scrum, que são abordagens utilizadas para gerenciar projetos de software de forma eficiente.
+        </p>
+        <p>
+            O objetivo principal do curso de desenvolvimento de sistemas é capacitar os alunos com as habilidades necessárias para criar soluções de software robustas e eficientes, que atendam às necessidades dos usuários e das organizações. É uma área em constante evolução, então os cursos geralmente se adaptam às mudanças tecnológicas e às demandas do mercado.
+        </p>
+    </main>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "block") {
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

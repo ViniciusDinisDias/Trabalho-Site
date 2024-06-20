@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linguagens de Programação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(https://img.freepik.com/fotos-gratis/fundo-azul-abstrato-com-muitos-pequenos-detalhes-generative-ai_169016-30148.jpg?size=626&ext=jpg&ga=GA1.1.1827530304.1709078400&semt=ais);
+            background-size: cover;
+        }
+        #welcome-container {
+            text-align: center;
+            padding: 20px;
+            background-color: darkblue;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 600px;
+        }
+        #welcome-container h1 {
+            color: #e7e0e0;
+        }
+        .btn {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            background-color: #26578b;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #0e3d6e;
+        }
+        #languages-container {
+            display: none;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9); /* Fundo branco translúcido */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 800px;
+        }
+        #languages-container h2 {
+            color: #333; /* Cor escura para contraste */
+        }
+        #languages-container p {
+            margin-bottom: 20px;
+            color: #333; /* Cor escura para contraste */
+        }
+    </style>
+</head>
+<body>
+    <div id="welcome-container">
+        <h1>Bem vindo à aba das nossas linguagens de programação</h1>
+        <div class="btn" onclick="showLanguages()">Vamos conhecê-las!</div>
+    </div>
+
+    <div id="languages-container">
+        <h2>Linguagens de Programação de nosso curso:</h2>
+        <p><strong>HTML (HyperText Markup Language)</strong><br>
+        HTML é a linguagem padrão utilizada para criar páginas web. Ele define a estrutura do conteúdo web por meio de tags e elementos, como cabeçalhos, parágrafos, imagens e links. O HTML serve como a base para o desenvolvimento de qualquer página na internet, organizando o conteúdo de forma hierárquica e semântica.</p>
+        <p><strong>CSS (Cascading Style Sheets)</strong><br>
+            CSS é a linguagem de estilo usada para descrever a apresentação de um documento HTML. Ele permite controlar o layout, cores, fontes e espaçamento de uma página web, melhorando a aparência e a usabilidade do conteúdo HTML. CSS trabalha em conjunto com HTML para criar interfaces visualmente atraentes e responsivas.</p>
+            
+            <p><strong>JavaScript</strong><br>
+            JavaScript é uma linguagem de programação que permite a criação de conteúdo dinâmico em páginas web. Com JavaScript, é possível manipular elementos HTML e CSS, responder a eventos de usuários, e criar interatividade em tempo real, como animações e validação de formulários. É uma das principais tecnologias da web, essencial para o desenvolvimento de aplicações ricas e interativas.</p>
+            
+            <p><strong>Python</strong><br>
+            Python é uma linguagem de programação de alto nível, conhecida por sua simplicidade e legibilidade. Ela é amplamente usada em desenvolvimento web, ciência de dados, automação, e muitas outras áreas. Python oferece uma sintaxe clara e concisa, facilitando o desenvolvimento rápido e a manutenção de código. Além disso, possui uma vasta biblioteca padrão e uma comunidade ativa.</p>
+            
+            <p><strong>C# (C-Sharp)</strong><br>
+            C# é uma linguagem de programação orientada a objetos desenvolvida pela Microsoft. Utilizada principalmente no desenvolvimento de aplicações Windows, jogos (usando Unity), e serviços web, C# combina a simplicidade de C++ com a produtividade de linguagens de alto nível. Ela faz parte da plataforma .NET, permitindo o desenvolvimento de aplicações robustas e escaláveis.</p>
+            
+            <p><strong>C++</strong><br>
+            C++ é uma linguagem de programação de propósito geral conhecida por sua eficiência e controle sobre os recursos de hardware. É amplamente utilizada em sistemas operacionais, jogos, e software de alto desempenho. C++ expande as capacidades da linguagem C com suporte a programação orientada a objetos, permitindo o desenvolvimento de aplicações complexas com alta performance.</p>
+            
+            <p><strong>React</strong><br>
+            React é uma biblioteca JavaScript para a construção de interfaces de usuário, especialmente para aplicações de página única (SPAs). Desenvolvido pelo Facebook, React permite a criação de componentes reutilizáveis que gerenciam seu próprio estado, simplificando o desenvolvimento de interfaces dinâmicas e interativas. Ele utiliza um modelo baseado em componentes e um DOM virtual para melhorar a eficiência das atualizações da interface.</p>
+            
+            <p><strong>TypeScript</strong><br>
+            TypeScript é uma linguagem de programação que estende o JavaScript adicionando tipagem estática. Criada pela Microsoft, TypeScript permite a detecção de erros em tempo de compilação e melhora a manutenção de código em grandes projetos. Ele compila para JavaScript padrão, permitindo o uso de todas as bibliotecas e frameworks JavaScript, mas com a adição de recursos como classes, interfaces e tipos.</p>
+            
+
+    <script>
+        function showLanguages() {
+            document.getElementById('welcome-container').style.display = 'none';
+            document.getElementById('languages-container').style.display = 'block';
+        }
+        
+        function hideLanguages() {
+            document.getElementById('languages-container').style.display = 'none';
+            document.getElementById('welcome-container').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

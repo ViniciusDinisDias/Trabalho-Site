@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Linguagens de Programação</title>
+    <style>
+        body {
+            background-image: url("https://cdn.pixabay.com/photo/2021/05/30/21/48/background-6297148_1280.jpg");
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        form {
+            background-color:lightskyblue;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question h3 {
+            margin-bottom: 10px;
+        }
+        .question label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        h1, h2 {
+            text-align: center;
+            color:white;
+        }
+        .result {
+            text-align: center;
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Quiz Linguagens de Programação</h1>
+    <h2>Agora vamos ver se você aprendeu mesmo!</h2>
+    <form id="quizForm">
+        <div class="question">
+            <h3>1. O que o HTML utiliza para definir elementos como títulos, parágrafos e links?</h3>
+            <label><input type="radio" name="q1" value="a"> Scripts</label>
+            <label><input type="radio" name="q1" value="b"> Tags</label>
+            <label><input type="radio" name="q1" value="c"> Estilos</label>
+        </div>
+        <div class="question">
+            <h3>2. O que o CSS controla em uma página web?</h3>
+            <label><input type="radio" name="q2" value="a"> Estrutura do conteúdo</label>
+            <label><input type="radio" name="q2" value="b"> Comportamento dinâmico</label>
+            <label><input type="radio" name="q2" value="c"> Cores, fontes e layouts</label>
+        </div>
+        <div class="question">
+            <h3>3. Para que o JavaScript é utilizado no desenvolvimento web?</h3>
+            <label><input type="radio" name="q3" value="a"> Adicionar interatividade e funcionalidades dinâmicas</label>
+            <label><input type="radio" name="q3" value="b"> Descrever a apresentação de documentos</label>
+            <label><input type="radio" name="q3" value="c"> Desenvolver aplicativos desktop</label>
+        </div>
+        <div class="question">
+            <h3>4. Qual é uma das áreas amplamente utilizadas pelo Python?</h3>
+            <label><input type="radio" name="q4" value="a"> Desenvolvimento de sistemas operacionais</label>
+            <label><input type="radio" name="q4" value="b"> Desenvolvimento de jogos com Unity</label>
+            <label><input type="radio" name="q4" value="c"> Ciência de dados e inteligência artificial</label>
+        </div>
+        <div class="question">
+            <h3>5. O PHP é especialmente eficaz na criação de que tipo de páginas?</h3>
+            <label><input type="radio" name="q5" value="a"> Páginas web estáticas</label>
+            <label><input type="radio" name="q5" value="b"> Páginas web dinâmicas e interativas</label>
+            <label><input type="radio" name="q5" value="c"> Páginas web para jogos</label>
+        </div>
+        <div class="question">
+            <h3>6. Para que o C# é frequentemente utilizado?</h3>
+            <label><input type="radio" name="q6" value="a"> Desenvolvimento de jogos e aplicações web com .NET</label>
+            <label><input type="radio" name="q6" value="b"> Desenvolvimento de sistemas operacionais</label>
+            <label><input type="radio" name="q6" value="c"> Scripts de automação simples</label>
+        </div>
+        <div class="question">
+            <h3>7. Em quais áreas o C++ é amplamente utilizado?</h3>
+            <label><input type="radio" name="q7" value="a"> Desenvolvimento de websites</label>
+            <label><input type="radio" name="q7" value="b"> Desenvolvimento de aplicativos móveis</label>
+            <label><input type="radio" name="q7" value="c"> Desenvolvimento de sistemas operacionais e jogos</label>
+        </div>
+        <button type="button" onclick="submitQuiz()">Enviar</button>
+    </form>
+    
